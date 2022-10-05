@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+.main{
+  margin-left: 100px;
+  display: grid;
+  width: 90%;
+  grid-template-rows: 1fr 8fr;
+  grid-template-columns: 1fr 8fr;
+  grid-template-areas: "header header" "sidebar content";
+  grid-gap: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header img{
+  width: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content img{
+  width: 150px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header{
+  background-color: #2165D5;
+  grid-area: header;
 }
-
-.App-link {
-  color: #61dafb;
+.sidebar{
+  background-color: #2165D5;
+  grid-area: sidebar;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content{
+  background-color: #FFFFFF;
+  grid-area: content;
+  background-image: url('https://funart.pro/uploads/posts/2022-08/thumbs/1659734108_24-funart-pro-p-fon-dlya-oblozhki-gruppi-vk-krasivo-25.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
 }
