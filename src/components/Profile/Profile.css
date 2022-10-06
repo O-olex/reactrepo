@@ -1,0 +1,12 @@
+.content img{
+    width: 150px;
+}
+
+.content{
+    background-color: #FFFFFF;
+    grid-area: content;
+    background-image: url('https://funart.pro/uploads/posts/2022-08/thumbs/1659734108_24-funart-pro-p-fon-dlya-oblozhki-gruppi-vk-krasivo-25.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
