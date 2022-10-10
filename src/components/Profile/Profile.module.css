@@ -1,20 +1,22 @@
-.content img{
+.ava img{
     width: 150px;
+    border-radius: 25%;
+    border: 2px solid white;
+    margin: 0 0 0 5px;
 }
-
+.wall{
+    background-image: url("https://funart.pro/uploads/posts/2022-08/thumbs/1659734108_24-funart-pro-p-fon-dlya-oblozhki-gruppi-vk-krasivo-25.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
 .content{
     background-color: #FFFFFF;
     grid-area: content;
-    background-image: url('https://funart.pro/uploads/posts/2022-08/thumbs/1659734108_24-funart-pro-p-fon-dlya-oblozhki-gruppi-vk-krasivo-25.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
-}
-.posts{
-    display: flex;
-    flex-direction: column;
-}
-.post{
-    color: black;
-    font-size: 20px;
 }

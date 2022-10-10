@@ -1,0 +1,8 @@
+.posts{
+    display: flex;
+    flex-direction: column;
+}
+.post{
+    color: black;
+    font-size: 20px;
+}
