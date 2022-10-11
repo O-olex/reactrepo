@@ -7,3 +7,7 @@
   grid-template-areas: "header header" "sidebar content";
   grid-gap: 10px;
 }
+.content{
+  background-color: #FFFFFF;
+  grid-area: content;
+}

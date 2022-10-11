@@ -4,7 +4,7 @@ import Posts from "./Posts/Posts"
 
 function Profile() {
     return (
-        <div className={cl.content}>
+        <div>
             <div className={cl.wall}>
                 <div className={cl.ava}>
                     <img src='https://i.yapx.ru/Ra8I0.jpg'></img>
