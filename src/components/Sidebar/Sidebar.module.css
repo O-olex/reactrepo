@@ -12,4 +12,5 @@
 }
 .item a.activeLink{
   color: red;
+  text-shadow: none;
 }
