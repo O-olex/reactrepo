@@ -14,8 +14,8 @@ function App() {
         <Sidebar />
         <div className={cl.content}>
           <Routes>
-            <Route path='/Profile' element={<Profile />} />
-            <Route path='/Dialogs' element={<Dialogs />} />
+            <Route path='/Profile*' element={<Profile />} />
+            <Route path='/Dialogs*' element={<Dialogs />} />
           </Routes>
         </div>
       </div>

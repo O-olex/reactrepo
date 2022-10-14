@@ -4,9 +4,11 @@ import cl from './Post.module.css'
 function Post(props) {
     return (
         <div className={cl.post}>
-            <div><img src="https://i.yapx.ru/Ra8I0.jpg"/></div>
-            {props.message}
-            <div>{props.likesCount} <span>like</span></div>
+            <div>
+                <img src="https://i.yapx.ru/Ra8I0.jpg"/>
+                {props.message}
+            </div>
+            <div>{props.likesCount} <span>likes</span></div>
         </div>
     );
 }
