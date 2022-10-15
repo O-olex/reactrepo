@@ -2,10 +2,3 @@
     display: grid;
     grid-template-columns: 2fr 8fr;
 }
-.dialog{
-    padding: 20px;
-    font-size: 20px;
-}
-.message{
-    padding: 20px;
-}

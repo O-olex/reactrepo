@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from './Settings.module.css';
 
-function Settings() {
+const Settings = () => {
   return (
     <div>
       Settings

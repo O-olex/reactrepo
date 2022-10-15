@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from './News.module.css';
 
-function News() {
+const News = () => {
   return (
     <div>
       News
