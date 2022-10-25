@@ -6,15 +6,15 @@ import Profile from './components/Profile/Profile.jsx';
 import { Routes, Route } from 'react-router-dom';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 
-const App = (props) => {
+const App = () => {
   return (
     <div className={cl.main}>
       <Header />
       <Sidebar />
       <div className={cl.content}>
         <Routes>
-          <Route path='/Profile/*' element={<Profile store={props.store} />} />
-          <Route path='/Dialogs/*' element={<DialogsContainer store={props.store} />} />
+          <Route path='/Profile/*' element={<Profile />} />
+          <Route path='/Dialogs/*' element={<DialogsContainer />} />
         </Routes>
       </div>
     </div>
