@@ -13,7 +13,7 @@ export let rerenderEntireTree = (state) => {
   root.render(
     <React.StrictMode>
       <BrowserRouter>
-        <Provider store={store}>
+        <Provider store={ store }>
           <App />
         </Provider>
       </BrowserRouter>
