@@ -24,3 +24,6 @@ img{
     justify-content: space-between;
     width: 80%;
 }
+.selectedPage{
+    font-weight: bold;
+}
