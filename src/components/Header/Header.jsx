@@ -1,10 +1,19 @@
 import React from 'react';
 import cl from './Header.module.css';
+import { NavLink } from 'react-router-dom';
 
-const Header = () => {
-    return(
+
+const Header = (props) => {
+    return (
         <div className={cl.header}>
-            <img src='https://upload.wikimedia.org/wikipedia/ru/f/f9/Philadelphia_Eagles_primary_logo.png'></img>
+            <div>
+                <img src='https://upload.wikimedia.org/wikipedia/ru/f/f9/Philadelphia_Eagles_primary_logo.png'></img>
+            </div>
+            <div className={cl.loginBlock}>
+                {props.isAuth ? props.login :
+                <NavLink className={({ isActive }) =>
+                    (isActive ? cl.activeLink : "no")} to='/Login'>Login</NavLink>}
+            </div>
         </div>
     );
 }

@@ -24,7 +24,7 @@ let initialState = {
           followed: false, fullName: 'Jindro', status: '', location: { city: 'Prague', country: 'Czech Republic' }
         }
       ])*/],
-      pageSize: 50,
+      pageSize: 10,
       totalUsersCount: 0,
       currentPage: 1,
       isFetching: true

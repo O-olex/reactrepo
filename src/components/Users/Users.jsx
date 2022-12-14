@@ -8,7 +8,7 @@ const Users = (props) => {
     let pagesCount = Math.ceil( props.totalUsersCount / props.pageSize );
 
     let pages = [];
-    for (let i = 1; i <= pagesCount; i++) {
+    for (let i = 1; i <= 20; i++) {
       pages.push(i);
     }
 
@@ -23,7 +23,7 @@ const Users = (props) => {
         {
             props.users.map(u => <div className={c.userDIV} key={u.id}>
             <div className={c.leftDIV}>
-              <NavLink to={'/profile/' + u.id}>
+              <NavLink to={'/Profile/' + u.id}>
                 <img src={u.photos.small != null ? u.photos.small : userPhoto}></img><br />
               </NavLink>
               {u.followed

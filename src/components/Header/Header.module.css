@@ -1,7 +1,26 @@
-.header img{
+.header img {
     width: 100px;
 }
-.header{
+
+.header {
     background-color: #2165D5;
     grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.loginBlock a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.loginBlock a:hover {
+    text-shadow: 2px 1px 1px white;
+}
+
+.loginBlock a.activeLink {
+    color: red;
+    text-shadow: none;
 }
