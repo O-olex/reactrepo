@@ -14,7 +14,7 @@ const App = () => {
       <Sidebar />
       <div className={cl.content}>
         <Routes>
-          <Route path='/Profile/' element={<ProfileContainer />} />
+          <Route path='/Profile' element={<ProfileContainer />} />
           <Route path='/Profile/:userId' element={<ProfileContainer />} />
           <Route path='/Dialogs/*' element={<DialogsContainer />} />
           <Route path='/Users/*' element={<UsersContainer />} />
