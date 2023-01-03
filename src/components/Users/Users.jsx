@@ -2,14 +2,14 @@ import React from 'react';
 import c from './Users.module.css';
 import userPhoto from '../../assets/images/user.png';
 import { NavLink } from 'react-router-dom';
-import axios from 'axios';
+import { usersAPI } from '../../api/api';
 
 const Users = (props) => {
 
   let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
 
   let pages = [];
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 20/*pagesCount*/; i++) {
     pages.push(i);
   }
 
@@ -31,26 +31,13 @@ const Users = (props) => {
             </NavLink>
             {u.followed
               ? <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
-                props.toggleFollowingProgress(true, u.id);
-                axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,
-                {withCredentials: true, headers: {'API-KEY': '9daa298a-5ad3-427c-a0ee-6f75e625c238'}}).then(response => {
-                  if(response.data.resultCode == 0){
-                    props.unfollow(u.id);
-                  }
-                  props.toggleFollowingProgress(false, u.id);
-                });
-                
+
+                props.unfollow(u.id);
 
               }}>Unfollow</button>
               : <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
-                props.toggleFollowingProgress(true, u.id);
-                axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {},
-                {withCredentials: true, headers: {'API-KEY': '9daa298a-5ad3-427c-a0ee-6f75e625c238'}}).then(response => {
-                  if(response.data.resultCode == 0){
-                    props.follow(u.id);
-                  }
-                  props.toggleFollowingProgress(false, u.id);
-                });
+                
+                props.follow(u.id);
 
               }}>Follow</button>}
           </div>
