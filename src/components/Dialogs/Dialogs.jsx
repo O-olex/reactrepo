@@ -24,6 +24,7 @@ const Dialogs = (props) => {
     props.updateNewMessageText(text);
   }
 
+
   return (
     <div className={cl.dialogs}>
       <div className={cl.dialogsContainer}>
