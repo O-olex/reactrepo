@@ -4,6 +4,7 @@ import authReducer from './auth-reducer';
 import dialogsReducer from "./dialogs-reducer";
 import profileReducer from "./profile-reducer";
 import usersReducer from './users-reducer';
+import appReducer from './app-reducer';
 import { reducer as formReducer } from "redux-form";
 
 let store = configureStore({
@@ -13,6 +14,7 @@ let store = configureStore({
         usersPage: usersReducer,
         auth: authReducer,
         form: formReducer,
+        app: appReducer,
     }},
     applyMiddleware(thunkMiddleware)
     );
