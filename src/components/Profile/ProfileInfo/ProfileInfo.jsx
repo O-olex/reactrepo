@@ -1,6 +1,6 @@
 import React from 'react';
 import Preloader from '../../common/Preloader';
-import ProfileStatus from './ProfileStatus';
+import ProfileStatusHooks from './ProfileStatusHooks';
 import cl from './ProfileInfo.module.css';
 import userPhoto from '../../../assets/images/user.png';
 
@@ -9,7 +9,7 @@ const ProfileInfo = (props) => {
     if(!props.profile) {
         return <Preloader />
     }
-debugger
+
     return (
             <div className={cl.wall}>
                 <div className={cl.ava}>
@@ -17,7 +17,7 @@ debugger
                 </div>
                 <div>
                     <div>{props.profile.fullName}</div>
-                    <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
+                    <ProfileStatusHooks status={props.status} updateStatus={props.updateStatus} />
                 </div>
             </div>
     );
