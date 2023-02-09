@@ -24,7 +24,7 @@ const Sidebar = () => {
       <br></br>
       <div className={cl.item}>
         <NavLink to='/Users' className={({ isActive }) =>
-            (isActive ? cl.activeLink : "no")}>Find users</NavLink>
+            (isActive ? cl.activeLink : "no")}>Users</NavLink>
       </div>
       <br></br>
       <div className={cl.item}>
