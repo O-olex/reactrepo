@@ -10,7 +10,7 @@ const maxLength10 = maxLengthCreator(10);
 const Posts = (props) => {
 
     let postsElements = props.posts.map(
-        m => <Post message={m.message} deletePost={props.deletePost} id={m.id} likesCount={m.likesCount} />
+        m => <Post profile={props.profile} message={m.message} deletePost={props.deletePost} key={m.id} id={m.id} likesCount={m.likesCount} />
     );
 
     const addPost = (values) => {
@@ -29,8 +29,8 @@ const Posts = (props) => {
 
 const AddPostForm = (props) => {
     return (
-        <form onSubmit={props.handleSubmit}>
-            <Field component={Textarea} placeholder="Enter message" name="newPost" validate={[required, maxLength10]} />
+        <form className={cl.postForm} onSubmit={props.handleSubmit}>
+            <Field component={Textarea} placeholder="Enter new post" name="newPost" validate={[required, maxLength10]} />
             <button>Add post</button>
         </form>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 import cl from './App.module.css';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Sidebar from './components/Sidebar/Sidebar';
-import { Routes, Route, BrowserRouter  } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 import UsersContainer from './components/Users/UsersContainer';
 import ProfileContainer from './components/Profile/ProfileContainer';
@@ -11,6 +11,7 @@ import { connect, Provider } from 'react-redux';
 import { initializeApp } from '../src/redux/app-reducer'
 import Preloader from './components/common/Preloader';
 import store from './redux/redux-store';
+import FriendsContainer from './components/Users/FriendsContainer';
 
 class App extends React.Component {
   componentDidMount() {
@@ -24,15 +25,19 @@ class App extends React.Component {
     return (
       <div className={cl.main}>
         <HeaderContainer />
-        <Sidebar />
-        <div className={cl.content}>
-          <Routes>
-            <Route path='/Profile' element={<ProfileContainer />} />
-            <Route path='/Profile/:userId' element={<ProfileContainer />} />
-            <Route path='/Dialogs/*' element={<DialogsContainer />} />
-            <Route path='/Users/*' element={<UsersContainer />} />
-            <Route path='/Login/*' element={<Login />} />
-          </Routes>
+        <div className={cl.sidebar_content}>
+          <Sidebar />
+
+          <div className={cl.content}>
+            <Routes>
+              <Route path='/Profile' element={<ProfileContainer />} />
+              <Route path='/Profile/:userId' element={<ProfileContainer />} />
+              <Route path='/Dialogs/*' element={<DialogsContainer />} />
+              <Route path='/Users/*' element={<UsersContainer />} />
+              <Route path='/Friends/*' element={<FriendsContainer />} />
+              <Route path='/Login/*' element={<Login />} />
+            </Routes>
+          </div>
         </div>
       </div>
     );
@@ -43,14 +48,14 @@ const mapStateToProps = (state) => ({
   initialized: state.app.initialized,
 });
 
-const AppCon = connect(mapStateToProps, {initializeApp})(App);
+const AppCon = connect(mapStateToProps, { initializeApp })(App);
 
 const AppContainer = (props) => {
   return <BrowserRouter>
-      <Provider store={store}>
-        <AppCon />
-      </Provider>
-    </BrowserRouter>
+    <Provider store={store}>
+      <AppCon />
+    </Provider>
+  </BrowserRouter>
 }
 
 export default AppContainer;

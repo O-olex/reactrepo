@@ -10,8 +10,8 @@ const Sidebar = () => {
             (isActive ? cl.activeLink : "no")}>My profile</NavLink>
       </div>
       <div className={cl.item}>
-        <NavLink to='/News' className={({ isActive }) =>
-            (isActive ? cl.activeLink : "no")}>News</NavLink>
+        <NavLink to='/Friends' className={({ isActive }) =>
+            (isActive ? cl.activeLink : "no")}>Friends</NavLink>
       </div>
       <div className={cl.item}>
         <NavLink to='/Dialogs' className={({ isActive }) =>

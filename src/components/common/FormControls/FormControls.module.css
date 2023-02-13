@@ -9,3 +9,38 @@
 .formError{
     color: red;
 }
+.formControl input{
+    background-color: rgb(64, 95, 131);
+    color: pink;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.formControl textarea{
+    background-color: rgb(64, 95, 131);
+    color: pink;
+    font-size: 13pt;
+    border-radius: 20px;
+    border: 2px solid black;
+    resize: none;
+}
+.formControl input::placeholder { 
+    color: pink;
+    opacity: 0.5;
+}
+.formControl textarea::placeholder { 
+    color: pink;
+    opacity: 0.5;
+}
+.remember{
+    display: flex;
+    flex-direction: row;
+    color: rgb(64, 95, 131);
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login h1{
+    color: rgb(64, 95, 131);
+}

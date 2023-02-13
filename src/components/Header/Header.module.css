@@ -1,26 +1,41 @@
 .header img {
     width: 100px;
 }
-
+.loginName{
+    color: pink;
+    font-size: 20px;
+}
+.buttonLogout{
+    background-color: rgb(64, 95, 131);
+    color: pink;
+    border-radius: 20px;
+}
+.buttonLogout:hover{
+    color: #5dcef0;
+    box-shadow: 0.5px 0.5px  pink;
+}
 .header {
-    background-color: #2165D5;
-    grid-area: header;
+    background-color: rgb(64, 95, 131);
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .loginBlock a {
     text-decoration: none;
-    color: white;
+    color: pink;
     font-size: 20px;
 }
 
 .loginBlock a:hover {
-    text-shadow: 2px 1px 1px white;
+    text-shadow: 2px 1px 1px pink;
 }
 
 .loginBlock a.activeLink {
-    color: red;
+    font-size: 18pt;
+    color: #5dcef0;
     text-shadow: none;
+    
 }

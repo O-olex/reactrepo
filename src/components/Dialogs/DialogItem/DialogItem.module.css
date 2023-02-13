@@ -1,4 +1,12 @@
 .dialog{
-    padding: 20px;
-    font-size: 20px;
+    padding: 10px;
+     
+}
+.dialog a{
+    text-decoration: none;
+    color: rgb(64, 95, 131);
+    font-size: 18pt;
+}
+.dialog a:hover{
+    text-shadow: 2px 1px 1px rgb(64, 95, 131);
 }

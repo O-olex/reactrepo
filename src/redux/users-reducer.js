@@ -92,6 +92,16 @@ export const getUsers = (currentPage, pageSize) => async dispatch => {
     dispatch(setTotalUsersCount(data.totalCount));
 }
 
+export const getFriends = (currentPage = 1, pageSize = 10) => async dispatch => {
+    dispatch(toggleIsFetching(true));
+
+    let data = await usersAPI.getFriends(currentPage, pageSize)
+
+    dispatch(toggleIsFetching(false));
+    dispatch(setUsers(data.items));
+    dispatch(setTotalUsersCount(data.totalCount));
+}
+
 
 export const follow = (userId) => async dispatch => {
     dispatch(toggleFollowingProgress(true, userId));

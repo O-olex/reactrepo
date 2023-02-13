@@ -1,7 +1,10 @@
 import React from 'react';
 import cl from './Post.module.css'
+import userPhoto from '../../../../assets/images/user.png';
 
 const Post = (props) => {
+
+    // const image = props.profile.photos.small
 
     const deletePost = () => {
 
@@ -10,12 +13,13 @@ const Post = (props) => {
     }
 
     return (
+        
         <div className={cl.post}>
-            <div>
-                <img src="https://i.yapx.ru/Ra8I0.jpg"/>
+            <div className={cl.postImg}>
+            {/* <img src={image != null ? image : userPhoto}/> */}
+            
                 {props.message}
             </div>
-            <div>{props.likesCount} <span>likes</span></div>
             <button className={cl.del} onClick={deletePost}>Delete</button>
         </div>
     );

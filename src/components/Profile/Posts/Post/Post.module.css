@@ -9,9 +9,13 @@
 }
 .post img{
     width: 50px;
-    border: 2px solid white;
-    border-radius: 25%;
+    border-radius: 20px;
 }
 .del{
-    width: 50px;
+    width: 60px;
+}
+.postImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

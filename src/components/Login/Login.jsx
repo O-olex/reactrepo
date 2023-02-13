@@ -13,7 +13,7 @@ const LoginForm = (props) => {
     <form onSubmit={props.handleSubmit}>
       <div><Field component={Input} validate={[required]} name="email" placeholder="Email" /></div>
       <div><Field component={Input} validate={[required]} name="password" type="password" placeholder="Password" /></div>
-      <div><Field component={Input} name="rememberMe" type="checkbox" />Remember me</div>
+      <div className={cl.remember}><div><Field component={Input} name="rememberMe" type="checkbox" /></div><div>Remember me</div></div>
       { props.error && <div className={cl.formError}>{props.error}</div>}
       <div><button>Submit</button></div>
     </form>
@@ -35,10 +35,10 @@ const Login = (props) => {
     return <Navigate to={"/profile"} />
   }
 
-  return <>
+  return <div className={cl.login}>
     <h1>Login</h1>
     <LoginReduxForm onSubmit={onSubmit} />
-  </>
+  </div>
 }
 
 const mapStateToProps = (state) => ({

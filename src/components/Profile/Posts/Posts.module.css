@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 .post{
-    color: black;
+    color: rgb(64, 95, 131);
     font-size: 20px;
+}
+.postForm textarea{
+    width: 200px;
+    height: 40px;
 }

@@ -1,7 +1,6 @@
 .ava img{
     width: 150px;
-    border-radius: 25%;
-    border: 2px solid white;
+    border-radius: 20px;
     margin: 0 0 0 5px;
 }
 .wall{
@@ -9,6 +8,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
+    border-radius: 20px;
     width: 100%;
     height: 300px;
     display: flex;
@@ -17,7 +17,16 @@
     align-items: flex-end;
 }
 .status{
-    background-color: white;
-    border-radius: 25%;
-
+    font-size: 15pt;
+}
+.name_status{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    margin: 10px;
+}
+.name{
+    font-size: 18pt;
+    font-weight: bold;
 }

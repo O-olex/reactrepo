@@ -7,13 +7,25 @@
 .userDIV{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 50%;
     margin: 10px;
     padding: 5px;
-    border: 1px solid #2165D5;
+    background-color: rgb(64, 95, 131);
+    border-radius: 20px;
+    color: pink;
+}
+.userDIV button{
+    background-color: rgb(64, 95, 131);
+    color: pink;
+    border-radius: 20px;
+}
+.userDIV button:hover{
+    color: #5dcef0;
+    box-shadow: 0.5px 0.5px  pink;
 }
 img{
     width: 50px;
+    border-radius: 20px;
 }
 .leftDIV{
     width: 20%;
@@ -23,7 +35,4 @@ img{
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
-}
-.selectedPage{
-    font-weight: bold;
 }

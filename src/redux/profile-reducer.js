@@ -1,4 +1,4 @@
-import { profileAPI, usersAPI } from '../api/api';
+import { profileAPI } from '../api/api';
 
 const ADD_POST = 'ADD_POST';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
@@ -19,10 +19,11 @@ const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST: {
             let newPost = {
-                id: 5,
+                id: state.posts.at(-1).id + 1,
                 message: action.newPost,
                 likesCount: 0
             };
+            debugger
             return {
                 ...state,
                 posts: [...state.posts, newPost]
@@ -59,7 +60,7 @@ export const setStatus = (status) => ({ type: SET_STATUS, status });
 
 
 export const getUserProfile = (userId) => async dispatch => {
-    let response = await usersAPI.getProfile(userId)
+    let response = await profileAPI.getProfile(userId)
     dispatch(setUserProfile(response.data));
 }
 

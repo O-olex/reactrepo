@@ -1,0 +1,13 @@
+
+.number{
+    color: rgb(64, 95, 131);
+    user-select: none;
+    padding: 3px;
+}
+.number :hover{
+    text-shadow: 2px 1px 1px rgb(64, 95, 131);
+}
+
+.selectedPage{
+    font-weight: bold;
+}
