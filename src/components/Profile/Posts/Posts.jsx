@@ -10,7 +10,7 @@ const maxLength10 = maxLengthCreator(10);
 const Posts = (props) => {
 
     let postsElements = props.posts.map(
-        m => <Post profile={props.profile} message={m.message} deletePost={props.deletePost} key={m.id} id={m.id} likesCount={m.likesCount} />
+        m => <Post profile={props.profile} message={m.message} deletePost={props.deletePost} key={m.id} id={m.id} />
     );
 
     const addPost = (values) => {

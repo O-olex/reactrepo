@@ -8,8 +8,8 @@ const DELETE_POST = 'DELETE_POST'
 
 let initialState = {
     posts: [
-        { id: 1, message: 'First post', likesCount: 5 },
-        { id: 2, message: 'The weather is good!', likesCount: 2 }
+        { id: 1, message: 'First post' },
+        { id: 2, message: 'The weather is good!' }
     ],
     profile: null,
     status: "",
@@ -18,11 +18,10 @@ let initialState = {
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST: {
-            let newPost = {
-                id: state.posts.at(-1).id + 1,
-                message: action.newPost,
-                likesCount: 0
-            };
+            
+            let newPost = state.posts.length !== 0 
+            ? {id: state.posts.at(-1).id + 1, message: action.newPost,}
+            : {id: 1, message: action.newPost,}
             debugger
             return {
                 ...state,

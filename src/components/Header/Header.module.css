@@ -1,5 +1,5 @@
 .header img {
-    width: 100px;
+    width: 50px;
 }
 .loginName{
     color: pink;
@@ -30,7 +30,7 @@
 }
 
 .loginBlock a:hover {
-    text-shadow: 2px 1px 1px pink;
+    text-shadow: 2px 1px 1px #ffc0cb;
 }
 
 .loginBlock a.activeLink {

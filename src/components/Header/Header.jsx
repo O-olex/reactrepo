@@ -1,13 +1,13 @@
 import React from 'react';
 import cl from './Header.module.css';
 import { NavLink } from 'react-router-dom';
-
+import logo from '../../assets/images/logo.png'
 
 const Header = (props) => {
     return (
         <div className={cl.header}>
             <div>
-                <img src='https://upload.wikimedia.org/wikipedia/ru/f/f9/Philadelphia_Eagles_primary_logo.png'></img>
+                <img src={logo}></img>
             </div>
             <div className={cl.loginBlock}>
                 {props.isAuth
