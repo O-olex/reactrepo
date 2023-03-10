@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/reactrepo/static/css/main.0db599c7.css",
-    "main.js": "/reactrepo/static/js/main.fbbdd87a.js",
+    "main.js": "/reactrepo/static/js/main.ca693a3a.js",
     "static/js/787.90a18bb3.chunk.js": "/reactrepo/static/js/787.90a18bb3.chunk.js",
     "static/media/user.png": "/reactrepo/static/media/user.99baa5e859fca5878faa.png",
     "static/media/logo.png": "/reactrepo/static/media/logo.51f88f5689ac4f08fb6e.png",
     "static/media/loader.gif": "/reactrepo/static/media/loader.21eb8f6b41e7c63ad2b6.gif",
     "index.html": "/reactrepo/index.html",
     "main.0db599c7.css.map": "/reactrepo/static/css/main.0db599c7.css.map",
-    "main.fbbdd87a.js.map": "/reactrepo/static/js/main.fbbdd87a.js.map",
+    "main.ca693a3a.js.map": "/reactrepo/static/js/main.ca693a3a.js.map",
     "787.90a18bb3.chunk.js.map": "/reactrepo/static/js/787.90a18bb3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0db599c7.css",
-    "static/js/main.fbbdd87a.js"
+    "static/js/main.ca693a3a.js"
   ]
 }
