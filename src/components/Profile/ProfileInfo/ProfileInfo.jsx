@@ -10,10 +10,16 @@ const ProfileInfo = (props) => {
         return <Preloader />
     }
 
+    const onPhotoSelected = (e) => {
+        if (e.target.files.length)
+        props.savePhoto(e.target.files[0]);
+    }
+
     return (
             <div className={cl.wall}>
                 <div className={cl.ava}>
                     <img src={props.profile.photos.large != null ? props.profile.photos.large : userPhoto}></img>
+                    {props.isOwner && <input type='file' onChange={onPhotoSelected}/>}
                 </div>
                 <div className={cl.name_status}>
                     <div className={cl.name}>{props.profile.fullName}</div>

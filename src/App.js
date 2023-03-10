@@ -2,7 +2,7 @@ import React from 'react';
 import cl from './App.module.css';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Sidebar from './components/Sidebar/Sidebar';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 import UsersContainer from './components/Users/UsersContainer';
 import ProfileContainer from './components/Profile/ProfileContainer';
@@ -51,11 +51,11 @@ const mapStateToProps = (state) => ({
 const AppCon = connect(mapStateToProps, { initializeApp })(App);
 
 const AppContainer = (props) => {
-  return <BrowserRouter>
+  return <HashRouter >
     <Provider store={store}>
       <AppCon />
     </Provider>
-  </BrowserRouter>
+  </HashRouter>
 }
 
 export default AppContainer;
