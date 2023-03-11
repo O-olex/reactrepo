@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/reactrepo/static/css/main.0db599c7.css",
-    "main.js": "/reactrepo/static/js/main.ca693a3a.js",
+    "main.css": "/reactrepo/static/css/main.2c90152f.css",
+    "main.js": "/reactrepo/static/js/main.2e2c5e46.js",
     "static/js/787.90a18bb3.chunk.js": "/reactrepo/static/js/787.90a18bb3.chunk.js",
+    "static/media/wall.jpg": "/reactrepo/static/media/wall.bbe3e5be03c62dc7396d.jpg",
     "static/media/user.png": "/reactrepo/static/media/user.99baa5e859fca5878faa.png",
     "static/media/logo.png": "/reactrepo/static/media/logo.51f88f5689ac4f08fb6e.png",
     "static/media/loader.gif": "/reactrepo/static/media/loader.21eb8f6b41e7c63ad2b6.gif",
     "index.html": "/reactrepo/index.html",
-    "main.0db599c7.css.map": "/reactrepo/static/css/main.0db599c7.css.map",
-    "main.ca693a3a.js.map": "/reactrepo/static/js/main.ca693a3a.js.map",
+    "main.2c90152f.css.map": "/reactrepo/static/css/main.2c90152f.css.map",
+    "main.2e2c5e46.js.map": "/reactrepo/static/js/main.2e2c5e46.js.map",
     "787.90a18bb3.chunk.js.map": "/reactrepo/static/js/787.90a18bb3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0db599c7.css",
-    "static/js/main.ca693a3a.js"
+    "static/css/main.2c90152f.css",
+    "static/js/main.2e2c5e46.js"
   ]
 }
