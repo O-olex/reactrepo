@@ -13,7 +13,7 @@ const ProfileStatusHooks = (props) => {
     }, [props.status])
 
     const activateMode = () => {
-        setEditMode(true);
+        props.isOwner && setEditMode(true);
     }
 
     const deactivateMode = () => {
