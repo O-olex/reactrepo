@@ -44,3 +44,7 @@
 .login h1{
     color: rgb(64, 95, 131);
 }
+.captcha{
+    border-radius: 0%;
+    width: 150px;
+}
